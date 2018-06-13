@@ -1,7 +1,7 @@
 {{#resume.basics}}
 	<header class="tc pv4 pv5-ns">
 		{{#if picture}}
-		<img src="{{picture}}" class="br3 ba h3 w3" alt="avatar">
+		<img src="{{picture}}" class="br3 h4 w4" alt="avatar">
 		{{/if}}
 		<h1 class="f5 f4-ns fw6">{{name}}</h1>
 		<h2 class="f6 fw2 ttu tracked gray">{{label}}</h2>
@@ -10,7 +10,7 @@
 		<div class="contact flex justify-between">
 				<ul class="list pl0">
 				{{#if website}}<li class="mb1"><a href="{{website}}">{{website}}</a></li>{{/if}}
-				{{#if email}}<li class="mb1"><a href="{{email}}">{{email}}</a></li>{{/if}}
+				{{#if email}}<li class="mb1"><a href="mailto:{{email}}">{{email}}</a></li>{{/if}}
 				{{#if phone}}<li class="mb1">{{phone}}</li>{{/if}}
 				{{#location}}
 					{{#if address}}
@@ -24,7 +24,7 @@
 					{{#each profiles}}
 					{{#if network}}
 					<li class="mb1 network">
-						<span class="ttl gray">{{network}}/</span> <a href="{{url}}">{{username}}</a>
+						<span class="ttl gray">{{network}} / </span><a href="{{url}}">{{username}}</a>
 					</li>
 					{{/if}}
 					{{/each}}
