@@ -1,80 +1,87 @@
 <!doctype html>
 <html>
-	<head>
-	
+
+<head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
+
 	<title>Richard Hendriks</title>
-	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
 
 	<style>
-	a {
-  color: blue;
-  text-decoration: none;
-}
+		a {
+			color: blue;
+			text-decoration: none;
+		}
 
-.quotes::after,
-.quotes::before {
-  font-weight: 900;
-  font-family: serif;
-}
+		.quotes::after,
+		.quotes::before {
+			font-weight: 900;
+			font-family: serif;
+		}
 
-.quotes::before {
-  content: "“";
-}
+		.quotes::before {
+			content: "“";
+		}
 
-.quotes::after {
-  content: "”";
-}
+		.quotes::after {
+			content: "”";
+		}
 
-.lt-dash::before {
-  content: "- ";
-}
+		.lt-dash::before {
+			content: "- ";
+		}
 
-@media print {
-  section {
-    page-break-inside: avoid;
-  }
-
-  section::after {
-    content: "Ricky";
-  }
-}
-
+		@media print {
+			section {
+				page-break-inside: avoid;
+			}
+		}
 	</style>
-	
-	</head>
-	<body class="sans-serif black bg-white">
-	
-		<div id="resume" class="mw8 center mb6">
-			<header class="tc pv4 pv5-ns">
-				<h1 class="f5 f4-ns fw6">Richard Hendriks</h1>
-				<h2 class="f6 fw2 ttu tracked gray">Programmer</h2>
-			</header>
-			<section id="basics">
-				<div class="contact flex justify-between">
-						<ul class="list pl0">
-						<li class="mb1"><a href="http://richardhendricks.com">http://richardhendricks.com</a></li>
-						<li class="mb1"><a href="richard.hendriks@mail.com">richard.hendriks@mail.com</a></li>
-						<li class="mb1">(912) 555-4321</li>
-								<li class="mb1">2712 Broadway St, CA 94115, San Francisco, California, US.</li>
-						</ul>
-		
-						<ul class="list pl0 tr">
-							<li class="mb1 network">
-								<span class="ttl gray">Twitter/</span> <a href="">neutralthoughts</a>
-							</li>
-							<li class="mb1 network">
-								<span class="ttl gray">SoundCloud/</span> <a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
-							</li>
-						</ul>
-				</div>
-				
-				<div class="summary lh-copy">
-					<p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
-				</div>
-			</section>
+
+</head>
+
+<body class="sans-serif black bg-white">
+
+	<div id="resume" class="mw8 center mb6">
+		<header class="tc pv4 pv5-ns">
+			<h1 class="f5 f4-ns fw6">Richard Hendriks</h1>
+			<h2 class="f6 fw2 ttu tracked gray">Programmer</h2>
+		</header>
+		<section id="basics">
+			<div class="contact flex justify-between">
+				<ul class="list pl0">
+					<li class="mb1">
+						<a href="http://richardhendricks.com">http://richardhendricks.com</a>
+					</li>
+					<li class="mb1">
+						<a href="richard.hendriks@mail.com">richard.hendriks@mail.com</a>
+					</li>
+					<li class="mb1">(912) 555-4321</li>
+					<li class="mb1">2712 Broadway St, CA 94115, San Francisco, California, US.</li>
+				</ul>
+
+				<ul class="list pl0 tr">
+					<li class="mb1 network">
+						<span class="ttl gray">Twitter/</span>
+						<a href="">neutralthoughts</a>
+					</li>
+					<li class="mb1 network">
+						<span class="ttl gray">SoundCloud/</span>
+						<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="summary lh-copy">
+				<p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
+					Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied
+					information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants,
+					his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it,
+					but THAT would NOT be a “length-limited” conversation!</p>
+			</div>
+		</section>
 		<section id="skills">
 			<h2 class="f3 fw5 lh-copy mt4">Skills</h2>
 			<div class="flex flex-wrap">
@@ -108,15 +115,15 @@
 				<h3 class="name f4 fw5 lh-copy mb0">
 					Pied Piper
 				</h3>
-		
+
 				<div class="website">
 					<a href="http://piedpiper.com">http://piedpiper.com</a>
 				</div>
-		
+
 				<h3 class="position f5 fw5 lh-copy mb0">
 					CEO/President
 				</h3>
-		
+
 				<div class="gray fw2 date">
 					<span class="startDate">
 						2013-12-01
@@ -126,7 +133,8 @@
 					</span>
 				</div>
 				<div class="summary lh-copy">
-					<p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+					<p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently
+						fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
 				</div>
 				<ul class="highlights list">
 					<li class="mb2 lt-dash">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
@@ -144,11 +152,11 @@
 				<div class="website">
 					<a href="http://coderdojo.com/">http://coderdojo.com/</a>
 				</div>
-		
+
 				<h3 class="position f5 fw5 lh-copy mb0">
 					Teacher
 				</h3>
-		
+
 				<div class="gray fw2 date">
 					<span class="startDate">
 						2012-01-01
@@ -157,7 +165,7 @@
 						&rarr; 2013-01-01
 					</span>
 				</div>
-		
+
 				<div class="summary">
 					<p>Global movement of free coding clubs for young people.</p>
 				</div>
@@ -175,7 +183,7 @@
 				</h4>
 				<h4 class="position f5 fw5 lh-copy mt3 mb0">
 					Bachelor
-		
+
 					<span class="gpa fw3 black-40">
 						GPA 4.0
 					</span>
@@ -188,7 +196,7 @@
 						&rarr; 2014-01-01
 					</span>
 				</div>
-				
+
 				<ul class="courses list">
 					<li class="lt-dash mb1">DB1101 - Basic SQL</li>
 					<li class="lt-dash mb1">CS2011 - Java Introduction</li>
@@ -204,11 +212,11 @@
 				<h4 class="position f5 fw5 lh-copy mt3 mb0">
 					Techcrunch
 				</h4>
-		
+
 				<div class="gray fw2 date">
 					2014-11-01
 				</div>
-				
+
 				<div class="summary">
 					<p>There is no spoon.</p>
 				</div>
@@ -220,15 +228,15 @@
 				<h3 class="name f4 fw5 lh-copy mb0">
 					Video compression for 3d media
 				</h3>
-		
+
 				<div class="website">
 					<a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)">Link to publication</a>
 				</div>
-				
+
 				<h3 class="position f5 fw5 lh-copy mb0">
 					Hooli
 				</h3>
-		
+
 				<div class="gray fw2 releaseDate">
 					2014-10-01
 				</div>
@@ -242,7 +250,7 @@
 			<ul class="list pl0">
 				<li class="lt-dash mb1">
 					English
-					 <span class="gray">Native speaker</span>
+					<span class="gray">Native speaker</span>
 				</li>
 			</ul>
 		</section>
@@ -262,13 +270,15 @@
 			<h2 class="f3 fw5 lh-copy mt4">References</h2>
 			<div class="item">
 				<blockquote class="reference f4 lh-copy gray quotes">
-					It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
+					It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will
+					be a valuable addition to any company.
 				</blockquote>
 				<div class="name">
 					&rarr; Erlich Bachman
 				</div>
 			</div>
 		</section>
-		</div>
-	</body>
+	</div>
+</body>
+
 </html>
