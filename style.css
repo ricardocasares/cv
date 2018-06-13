@@ -22,6 +22,8 @@ a {
 }
 
 @media print {
+  ul,
+  .item,
   section {
     page-break-inside: avoid;
   }

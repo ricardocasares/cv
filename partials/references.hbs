@@ -2,16 +2,16 @@
 <section id="references">
 	<h2 class="f3 fw5 lh-copy mt4">References</h2>
 	{{#each resume.references}}
-	<div class="item">
+	<div class="item mb4">
 		{{#if reference}}
-		<blockquote class="reference f4 lh-copy gray quotes">
+		<blockquote class="reference pl0 ml0 f4 lh-copy gray quotes">
 			{{reference}}
 		</blockquote>
 		{{/if}}
 		{{#if name}}
-		<div class="name">
-			&rarr; {{name}}
-		</div>
+		<h3 class="name f4 fw5">
+			{{name}}
+		</h3>
 		{{/if}}
 	</div>
 	{{/each}}

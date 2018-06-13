@@ -1,13 +1,16 @@
 {{#if resume.languages.length}}
 <section id="languages">
 	<h2 class="f3 fw5 lh-copy mt4">Languages</h2>
-	<ul class="list pl0">
+
+	<div class="flex flex-wrap">
 	{{#each resume.languages}}
-		<li class="lt-dash mb1">
-			{{#if language}}{{language}}{{/if}}
-			{{#if fluency}} <span class="gray">{{fluency}}</span>{{/if}}
+			<div class="w-25">
+			{{#if language}}<h3 class="f4 fw4 mb0">{{language}}</h3>{{/if}}
+			{{#if fluency}}<h4 class="f6 fw3 tracked ttu gray mt2">{{fluency}}</h4>{{/if}}
+			</div>
 		</li>
 	{{/each}}
+	</div>
 	</ul>
 </section>
 {{/if}}
