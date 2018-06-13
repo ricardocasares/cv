@@ -1,0 +1,14 @@
+{
+  "name": "jsonresume-theme-tachyons-clean",
+  "version": "0.0.1",
+  "description": "My take on jsonresume",
+  "author": "Ricardo Casares",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardocasares/cv"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}

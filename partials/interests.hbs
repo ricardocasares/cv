@@ -1,0 +1,24 @@
+{{#if resume.interests.length}}
+<section id="interests">
+	<h2 class="f3 fw5 lh-copy mt4">Interests</h2>
+	{{#each resume.interests}}
+	<div class="w-25">
+		{{#if name}}
+		<h3 class="f5 fw5 mb0 lh-copy name">
+			{{name}}
+		</h3>
+		{{/if}}
+		{{#if level}}
+		<div class="level f6 fw3 black-50 ttu">{{level}}</div>
+		{{/if}}
+		{{#if keywords.length}}
+		<ul class="list pl0">
+			{{#each keywords}}
+			<li class="mb1 lt-dash">{{.}}</li>
+			{{/each}}
+		</ul>
+		{{/if}}
+	</div>
+	{{/each}}
+</section>
+{{/if}}

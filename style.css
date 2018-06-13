@@ -1,0 +1,32 @@
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.quotes::after,
+.quotes::before {
+  font-weight: 900;
+  font-family: serif;
+}
+
+.quotes::before {
+  content: "“";
+}
+
+.quotes::after {
+  content: "”";
+}
+
+.lt-dash::before {
+  content: "- ";
+}
+
+@media print {
+  section {
+    page-break-inside: avoid;
+  }
+
+  section::after {
+    content: "Ricky";
+  }
+}

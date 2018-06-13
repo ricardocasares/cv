@@ -1,0 +1,37 @@
+{{#if resume.publications.length}}
+<section id="publications">
+	<h2 class="f3 fw5 lh-copy mt4">Publications</h2>
+	{{#each resume.publications}}
+	<div class="item">
+		{{#if name}}
+		<h3 class="name f4 fw5 lh-copy mb0">
+			{{name}}
+		</h3>
+		{{/if}}
+
+		{{#if website}}
+		<div class="website">
+			<a href="{{website}}">Link to publication</a>
+		</div>
+		{{/if}}
+		
+		{{#if publisher}}
+		<h3 class="position f5 fw5 lh-copy mb0">
+			{{publisher}}
+		</h3>
+		{{/if}}
+
+		{{#if releaseDate}}
+		<div class="gray fw2 releaseDate">
+			{{releaseDate}}
+		</div>
+		{{/if}}
+		{{#if summary}}
+		<div class="summary">
+			<p>{{summary}}</p>
+		</div>
+		{{/if}}
+	</div>
+	{{/each}}
+</section>
+{{/if}}
