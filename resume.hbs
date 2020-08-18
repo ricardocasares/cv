@@ -1,21 +1,29 @@
 <!doctype html>
 <html>
-	<head>
-	
+
+<head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
+
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
-	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
 
 	<style>
-	{{{css}}}
+		{
+				{
+					{
+					css
+				}
+			}
+		}
 	</style>
-	
-	</head>
-	<body class="sans-serif black bg-white">
-	
-		<div id="resume" class="mw8 center mb6 pa3">
+
+</head>
+
+<body class="sans-serif black bg-white">
+
+	<div id="resume" class="mw8 center mb6 pa3">
 		{{> basics }}
 		{{> languages }}
 		{{> skills }}
@@ -26,13 +34,7 @@
 		{{> awards }}
 		{{> publications }}
 		{{> interests }}
+	</div>
+</body>
 
-		<div class="mt5 mb5 bb b--black-20 bb--solid "></div>
-
-		<p class="tracked-mega ttu f7 lh-copy black-50">
-			I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the personal data protection act as of 29 august 1997, consolidated text: journal of laws 2016, item 922 as amended.
-		</p>
-
-		</div>
-	</body>
 </html>

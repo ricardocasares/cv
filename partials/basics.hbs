@@ -1,41 +1,42 @@
 {{#resume.basics}}
-	<header class="tc pv4">
-		{{#if picture}}
-		<img src="{{picture}}" class="br3 h4 w4" alt="avatar">
-		{{/if}}
-		<h1 class="f4 fw6">{{name}}</h1>
-		<h2 class="f6 fw2 ttu tracked gray">{{label}}</h2>
-	</header>
-	<section id="basics">
-		<div class="contact flex justify-between">
-				<ul class="list pl0">
-				{{#if website}}<li class="mb1"><a href="{{website}}">{{website}}</a></li>{{/if}}
-				{{#if email}}<li class="mb1"><a href="mailto:{{email}}">{{email}}</a></li>{{/if}}
-				{{#if phone}}<li class="mb1">{{phone}}</li>{{/if}}
-				{{#location}}
-					{{#if address}}
-						<li class="mb1">{{address}}{{#if postalCode}}, {{postalCode}}{{/if}}{{#if city}}, {{city}}{{/if}}{{#if region}}, {{region}}{{/if}}{{#if countryCode}}, {{countryCode}}{{/if}}.</li>
-					{{/if}}
-				{{/location}}
-				</ul>
+<header class="tc pv4">
+	{{#if picture}}
+	<img src="{{picture}}" class="br3 h4 w4" alt="avatar">
+	{{/if}}
+	<h1 class="f4 fw6">{{name}}</h1>
+	<h2 class="f6 fw2 ttu tracked gray">{{label}}</h2>
+</header>
+<section id="basics">
+	<div class="contact flex justify-between">
+		<ul class="list pl0">
+			{{#if website}}<li class="mb1"><a href="{{website}}">{{website}}</a></li>{{/if}}
+			{{#if email}}<li class="mb1"><a href="mailto:{{email}}">{{email}}</a></li>{{/if}}
+			{{#if phone}}<li class="mb1">{{phone}}</li>{{/if}}
+			{{#location}}
+			{{#if address}}
+			<li class="mb1">{{address}}{{#if postalCode}}, {{postalCode}}{{/if}}{{#if city}},
+				{{city}}{{/if}}{{#if region}}, {{region}}{{/if}}{{#if countryCode}}, {{countryCode}}{{/if}}.</li>
+			{{/if}}
+			{{/location}}
+		</ul>
 
-				{{#if profiles.length}}
-				<ul class="list pl0 tr">
-					{{#each profiles}}
-					{{#if network}}
-					<li class="mb1 network">
-						<span class="ttl gray">{{network}} / </span><a href="{{url}}">{{username}}</a>
-					</li>
-					{{/if}}
-					{{/each}}
-				</ul>
-				{{/if}}
-		</div>
-		
-		{{#if summary}}
-		<div class="summary lh-copy">
-			<p>{{summary}}</p>
-		</div>
+		{{#if profiles.length}}
+		<ul class="list pl0 tr">
+			{{#each profiles}}
+			{{#if network}}
+			<li class="mb1 network">
+				<span class="ttl gray">{{network}} / </span><a href="{{url}}">{{username}}</a>
+			</li>
+			{{/if}}
+			{{/each}}
+		</ul>
 		{{/if}}
-	</section>
+	</div>
+
+	{{#if summary}}
+	<div class="summary lh-copy">
+		<p>{{summary}}</p>
+	</div>
+	{{/if}}
+</section>
 {{/resume.basics}}

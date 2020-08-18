@@ -16,6 +16,7 @@ sudo apt-get install nodejs-legacy npm
 ```
 
 Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
+
 ```
 brew install node
 ```
@@ -61,7 +62,7 @@ Press ctrl-c to stop
 
 Congratulations, you've made it!
 
-__The theme development can now begin.__
+**The theme development can now begin.**
 
 ## Development
 
@@ -69,10 +70,10 @@ __The theme development can now begin.__
 
 Now that you have your boilerplate theme installed, go through a quick overview of each of the files needed for your JSONResume theme:
 
-* `package.json`: Your package.json is required by all npm packages. Everytime you want to release a new update of your theme, you'll need to update it's version number.
-* `index.js`: This is the file that will return the needed HTML to the theme server. You can use it to process some things with your theme first, but we'll talk about that a bit later.
-* `resume.hbs`: This is your actual template. This file is sent to the `index.js` for it to send to the theme server.
-* `style.css`: This is where all the CSS of your project goes. Since the `index.js` only returns HTML, the contents of this file are put between `<style>` tags in your `resume.hbs` file.
+- `package.json`: Your package.json is required by all npm packages. Everytime you want to release a new update of your theme, you'll need to update it's version number.
+- `index.js`: This is the file that will return the needed HTML to the theme server. You can use it to process some things with your theme first, but we'll talk about that a bit later.
+- `resume.hbs`: This is your actual template. This file is sent to the `index.js` for it to send to the theme server.
+- `style.css`: This is where all the CSS of your project goes. Since the `index.js` only returns HTML, the contents of this file are put between `<style>` tags in your `resume.hbs` file.
 
 In order to get values from an actual JSONResume, you'll need to use a templating system, such as [Mustache](http://mustache.github.io/) or [Handlebars](http://handlebarsjs.com/). The default boilerplate theme uses Handlebars.
 

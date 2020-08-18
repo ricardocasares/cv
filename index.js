@@ -8,7 +8,7 @@ function render(resume) {
   var partialsDir = path.join(__dirname, "partials");
   var filenames = fs.readdirSync(partialsDir);
 
-  filenames.forEach(function(filename) {
+  filenames.forEach(function (filename) {
     var matches = /^([^.]+).hbs$/.exec(filename);
     if (!matches) {
       return;
@@ -21,10 +21,10 @@ function render(resume) {
   });
   return Handlebars.compile(tpl)({
     css: css,
-    resume: resume
+    resume: resume,
   });
 }
 
 module.exports = {
-  render: render
+  render: render,
 };
