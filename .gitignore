@@ -1,6 +1,5 @@
-node_modules/
-npm-debug.log
-resume.html
-resume.pdf
+node_modules
+public
+*.log
 resume.json
 .DS_Store

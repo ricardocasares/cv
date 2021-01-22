@@ -9,24 +9,15 @@
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
 
-	<style>
-		{
-				{
-					{
-					css
-				}
-			}
-		}
-	</style>
+	<style>{{{css}}}</style>
 
 </head>
 
 <body class="sans-serif black bg-white">
-
 	<div id="resume" class="mw8 center mb6 pa3">
 		{{> basics }}
-		{{> languages }}
 		{{> skills }}
+		{{> languages }}
 		{{> work }}
 		{{> references }}
 		{{> volunteer }}
